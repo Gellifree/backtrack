@@ -4,14 +4,14 @@
 # SPDX-FileCopyrightText: 2021 Kovács Norbert <mfw.kovacs.norbert@gmail.com>
 #
 
-from backtrack import table
-from backtrack import error_handler
-from backtrack import solver
+from backtrack.table import Table
+from backtrack.error_handler import ErrorHandler
+from backtrack.solver import Solver
 
 
 def main():
-    data = solver.Solver.solve()
-    table.Table.draw(8, data)
+    data = Solver.solve()
+    Table.draw(8, data)
 
 
 if __name__ == "__main__":
